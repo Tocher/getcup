@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Get Cup</string>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">0-R2SITpelGTLRgT47Cgzd0PwncTrycxz-aWB</string>
+    <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+    <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">ASK_JAVASCRIPT</string>
+    <string name="facebook_app_id">1783044141722422</string>
+    <integer name="com_vk_sdk_AppId">5959878</integer>
+</resources>

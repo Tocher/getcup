@@ -1,0 +1,17 @@
+**/node_modules/**
+
+.git
+.githooks
+
+# Admin repo
+admin/build/
+
+# GetCup repo
+getcup/android/
+getcup/ios/
+getcup/GoogleMaps/
+
+# Backend repo
+backend/server/boot/
+
+# Landing repo

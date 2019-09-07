@@ -1,0 +1,14 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "extends": "loopback",
+  "rules": {
+    "padded-blocks": "off",
+    "object-curly-spacing": "off",
+    "space-in-parens": "off",
+    "spaced-comment": "off",
+    "comma-dangle": "off",
+    "max-len": ["error", { "code": 120 }]
+  }
+}

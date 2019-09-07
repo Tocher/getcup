@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "mongoDs",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "user",
+        "foreignKey": "userId"
+      }
+    }
+  },
+  "ACL": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "user": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Place": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "SubscriptionType": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Subscription": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "ProductType": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "SubscriptionSubtype": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Transaction": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Qrcode": {
+    "dataSource": "mongoDs",
+    "public": true
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "name": "SubscriptionSubtype",
+  "plural": "subscription-subtypes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "days": {
+      "type": "number",
+      "required": true
+    },
+    "cups": {
+      "type": "number",
+      "required": true
+    },
+    "price": {
+      "type": [
+        {
+          "value": "number",
+          "currency": "string",
+          "date": "date"
+        }
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "subscription": {
+      "type": "belongsTo",
+      "model": "SubscriptionType",
+      "foreignKey": "subscriptionTypeId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {
+    "updatePrice": {
+      "accepts": [
+        {
+          "arg": "id",
+          "type": "string",
+          "http": {
+            "source": "path"
+          }
+        },
+        {
+          "arg": "req",
+          "type": "object",
+          "http": {
+            "source": "req"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "subscriptionSubtype",
+        "type": "object",
+        "root": true
+      },
+      "http": {
+        "path": "/custom/:id/price",
+        "verb": "patch"
+      }
+    }
+  }
+}

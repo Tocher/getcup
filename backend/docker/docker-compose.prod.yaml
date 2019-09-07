@@ -1,0 +1,31 @@
+version: '2.1'
+
+services:
+
+  loopback:
+    image: node:8.4
+    working_dir: /loopback
+    container_name: getCoffee_loopback
+    command: bash -c "npm install && npm start"
+    healthcheck:
+      test: "exit 0"
+    environment:
+      NODE_ENV: production
+      MONGO_URL: null
+      MONGO_USER: null
+      MONGO_PASS: null
+    networks:
+      - getCoffee_network
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../loopback:/loopback
+      - getCoffee_loopback_data:/loopback/node_modules
+
+volumes:
+  getCoffee_loopback_data:
+    driver: local
+
+networks:
+  getCoffee_network:
+    driver: bridge

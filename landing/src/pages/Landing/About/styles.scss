@@ -1,0 +1,27 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .about-container_desc {
+    .about-container_desc-block {
+      text-align: justify;
+      max-width: 300px;
+
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+
+  &_photo {
+    margin-left: 30px;
+
+    img {
+      height: 500px;
+    }
+  }
+}

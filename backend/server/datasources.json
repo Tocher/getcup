@@ -1,0 +1,12 @@
+{
+  "mongoDs": {
+    "host": "getCoffee_mongo",
+    "port": 27017,
+    "url": "",
+    "database": "getCoffee",
+    "password": "",
+    "name": "mongoDs",
+    "user": "admin",
+    "connector": "mongodb"
+  }
+}

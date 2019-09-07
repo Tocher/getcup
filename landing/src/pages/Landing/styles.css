@@ -1,0 +1,57 @@
+.landing section {
+  padding: 0 30%; }
+  @media only screen and (max-width: 1500px) and (min-width: 1025px) {
+    .landing section {
+      padding: 0 20%; } }
+  @media only screen and (max-width: 1024px) {
+    .landing section {
+      padding: 0 10%; } }
+  .landing section h2 {
+    font-size: 36px;
+    margin-top: 33px;
+    margin-bottom: 16px; }
+  .landing section p {
+    font-size: 16px; }
+  .landing section .separator {
+    border-radius: 2px;
+    border: 0;
+    height: 7px;
+    margin: 0 auto 0 0;
+    width: 120px; }
+  .landing section .yellow {
+    background: #ffd43f; }
+  .landing section .red {
+    background: #ff6158; }
+  .landing section .blue {
+    background: #8bd4ce; }
+  .landing section .primary_color {
+    background: #651919; }
+  .landing section .section-content {
+    margin: 50px 0; }
+
+.landing #main {
+  text-align: center;
+  padding: 0 5%; }
+  .landing #main h1 {
+    font-size: 52px;
+    margin: 35px 0 15px 0; }
+  .landing #main p {
+    font-size: 18px;
+    margin: 15px 25%;
+    color: #767676; }
+  .landing #main .stores {
+    margin: 40px 0; }
+    .landing #main .stores a {
+      margin: 0 10px; }
+      .landing #main .stores a img {
+        vertical-align: middle;
+        width: 150px; }
+  .landing #main #main-section-image {
+    margin: 100px 0 60px 0;
+    width: 60%; }
+    @media only screen and (max-width: 1500px) and (min-width: 1025px) {
+      .landing #main #main-section-image {
+        width: 70%; } }
+    @media only screen and (max-width: 1024px) {
+      .landing #main #main-section-image {
+        width: 80%; } }

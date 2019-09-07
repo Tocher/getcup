@@ -1,0 +1,15 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .about-container .about-container_desc .about-container_desc-block {
+    text-align: justify;
+    max-width: 300px; }
+    .about-container .about-container_desc .about-container_desc-block h3 {
+      font-size: 24px; }
+    .about-container .about-container_desc .about-container_desc-block p {
+      font-size: 17px; }
+  .about-container_photo {
+    margin-left: 30px; }
+    .about-container_photo img {
+      height: 500px; }

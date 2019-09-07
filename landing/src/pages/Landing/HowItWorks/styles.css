@@ -1,0 +1,12 @@
+.steps-container {
+  display: flex;
+  flex-direction: column; }
+  .steps-container .step {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 20px; }
+    .steps-container .step img {
+      width: 80px; }
+    .steps-container .step h3 {
+      font-size: 22px; }
